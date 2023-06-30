@@ -1,0 +1,29 @@
+{
+    "alpha": {
+        "localauthorities": [
+            "City of Bradford Metropolitan City Council",
+            "Westminster City Council",
+            "Dorset Council",
+            "Merthyr Tydfil County Borough Council",
+            "The South London Partnership",
+            "Perth and Kinross Council"
+        ]
+    },
+    "beta": {
+        "localauthorities": [
+            "Royal Borough of Kensington and Chelsea",
+            "City of Bradford Metropolitan District Council",
+            "Renfrewshire Council",
+            "Sheffield City Council",
+            "Newcastle City Council",
+            "Sefton Metropolitan Borough Council",
+            "Coventry City Council",
+            "West of England Combined Authority",
+            "Merthyr Tydfil County Borough Council",
+            "Staffordshire County Council",
+            "Newry, Mourne and Down District Council (NI)",
+            "Tees Valley Combined Authority",
+            "Sunderland City Council"
+        ]
+    }
+}
