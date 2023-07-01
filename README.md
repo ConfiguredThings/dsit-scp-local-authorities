@@ -7,7 +7,7 @@ Original maps were sourced from the Office for National Statistics' [Geoportal](
 ogr2ogr -f "GeoJSON" <output-file> <input-file> -t_srs EPSG:4326 -s_srs EPSG:27700
 ```
 
-As the [South London Partnership](https://southlondonpartnership.co.uk) is not a formal administrative organisation, its boundary was formed by creating a GeoJSON [FeatureCollection](https://datatracker.ietf.org/doc/html/rfc7946#section-3.3) of [Features](https://datatracker.ietf.org/doc/html/rfc7946#section-3.2) and utilising [TurfJS](https://turfjs.org)'s [dissolve](https://turfjs.org/docs/#dissolve) function.
+As the [South London Partnership](https://southlondonpartnership.co.uk) is not a formal administrative organisation, its boundary was formed by creating a GeoJSON [FeatureCollection](https://datatracker.ietf.org/doc/html/rfc7946#section-3.3) of [Features](https://datatracker.ietf.org/doc/html/rfc7946#section-3.2) and utilising [TurfJS](https://turfjs.org)'s [dissolve](https://turfjs.org/docs/#dissolve) function, creating a GeometryCollection object. Finally TurfJS's [flatten](https://turfjs.org/docs/#flatten) function is utilised to convert the GeometryCollection back to a simple FeatureCollection.
 
 The generated GeoJSON files then required conversion to KML for import into Google Maps. Again `ogr2ogr` was utilised, this time with the following syntax:
 ```
